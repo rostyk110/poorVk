@@ -1,0 +1,657 @@
+.dialogs {
+    display: flex;
+    margin-top: 15px;
+    border-radius: 4px;
+    background-color: white;
+    height: 860px;
+}
+
+.plus,
+.close {
+    margin-top: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    opacity: 0.65;
+}
+
+.plus,
+.plus img {
+    width: 20px;
+    height: 20px;
+}
+
+.close,
+.close img {
+    width: 18px;
+    height: 18px;
+}
+
+.plus:hover,
+.close:hover {
+    opacity: 1;
+    transition: opacity 0.1s;
+}
+
+.searchWrapper {
+    position: relative;
+
+}
+
+.searchWrapper input{
+    width: 100%;
+    margin-top: -5px;
+    padding: 10px 10px 10px 26px;
+    border-color: transparent;
+}
+.searchWrapper input::placeholder{
+    color: #828282;
+}
+
+.searchWrapper input:focus::placeholder{
+    color: #b2b2b2;
+}
+
+.searchWrapper i {
+    position: absolute;
+    left: 5px;
+    top: 4px;
+}
+
+
+.dialogsItems {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dialogBlock {
+    position: relative;
+    width: 290px;
+    height: 50px;
+    padding: 10px 20px 10px 10px;
+    border-bottom: 1px solid #e1e8ed;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dialogBlock:hover {
+    cursor: pointer;
+}
+
+.dialogBlockLeft {
+    display: flex;
+    width: 230px;
+    overflow: hidden;
+}
+
+.dialogBlockRight {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100px;
+    height: 50px;
+}
+
+.newMessages {
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+    padding: 7px 8px;
+    border-radius: 40%/50%;
+    background-color: #7293B6;
+    text-align: center;
+    line-height: 10px;
+    color: white;
+}
+
+.deleteDialog {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: -25px;
+    top: -5px;
+    opacity: 0.4;
+    z-index: 1000;
+    cursor: pointer;
+
+}
+
+.deleteDialog:hover {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.deleteDialog:before, .deleteDialog:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 20px;
+    width: 2px;
+    background-color: black;
+}
+
+.deleteDialog:before {
+    transform: rotate(45deg);
+}
+
+.deleteDialog:after {
+    transform: rotate(-45deg);
+}
+
+
+.unreadMessage {
+    background-color: #F0F2F5;
+    transition: background-color 2s ease;
+}
+
+.dialogBlockRight {
+    width: 70px;
+}
+
+.dialogBlockRight .date {
+    font-size: 13px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+.userInfo .fullName {
+    color: #2a5885;
+    font-weight: bold;
+    margin-bottom: 12px;
+    line-height: 20px;
+    height: 12px;
+}
+
+.userInfo .you {
+    color: #8b939b;
+    margin-right: 7px;
+}
+
+a.active .you {
+    color: white;
+}
+
+.avatar {
+    position: relative;
+}
+
+.online {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: green;
+}
+
+a {
+    color: #222222;
+    font-size: 13px;
+}
+
+a.active {
+    background-color: #5181b8;
+    color: white;
+    cursor: pointer;
+}
+
+a.active,
+a.active .fullName,
+a.active .dialogBlockRight .date {
+    background-color: #5181b8;
+    color: white;
+}
+
+a.active .newMessages {
+    background-color: #7AA3CA;
+    color: #2B5278;
+}
+
+.dialog img {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.dialog img,
+.message img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.messages {
+    position: relative;
+    margin: 0 auto;
+    width: 480px;
+    border-left: 1px solid #e1e8ed;
+}
+
+.messagesWrapper {
+    margin-bottom: 10px;
+    height: calc(100% - 155px);
+    max-height: 100vh;
+    overflow-y: scroll;
+    /*height:400px;*/
+    /*overflow: hidden;*/
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dae2ea;
+    border-radius: 3px;
+}
+
+.header {
+    min-width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.messageWrapper {
+    position: relative;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 2s ease;
+    word-wrap: break-word;
+}
+
+/*.messageWrapper:hover {*/
+/*    background-color: lightgray;*/
+/*}*/
+
+.message {
+    display: flex;
+    margin-left: 20px;
+}
+
+.messageAvatar {
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+.messageAvatar,
+.messageAvatar img{
+    width: 50px;
+    height: 50px;
+}
+
+.messageAvatar:hover {
+    cursor: pointer;
+}
+
+.messageBtns {
+    visibility: hidden;
+    position: absolute;
+    right: 10px;
+    top: 27px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.messageBtns img {
+    width: 18px;
+    height: 18px;
+    opacity: .65;
+}
+
+.messageBtns img:hover {
+    opacity: 1;
+}
+
+.messageBtns img:first-child {
+    margin-right: 10px;
+}
+
+.messageWrapper:hover > .messageBtns {
+    visibility: visible;
+}
+
+.messageDelete img {
+    width: 26px;
+    height: 26px;
+}
+
+.userNameWrapper {
+    display: flex;
+}
+
+.headerDate {
+    color: #828282;
+    font-size: 13px;
+    text-align: center;
+}
+
+.userName {
+    color: #2a5885;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.userName:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.date {
+    color: rgba(119, 126, 140, .6);
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.messageText {
+    width: 280px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.edited {
+    color: #6f7985;
+    margin-left: 10px;
+}
+
+.input {
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+}
+
+.input form {
+    display: flex;
+}
+
+.input form textarea {
+    width: 370px;
+    height: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+    padding-left: 13px;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    resize: none;
+    cursor: text;
+    margin-bottom: 12px;
+    background: #fff;
+    border-radius: 6px;
+    border: solid 1px #d3d9de;
+}
+
+.paperPlane {
+    position: absolute;
+    right: -30px;
+    bottom: 23px;
+}
+
+.paperPlane:hover {
+    cursor: pointer;
+}
+
+.input img {
+    width: 20px;
+    height: 20px;
+}
+
+.typerName {
+    position: absolute;
+    bottom: 65px;
+    left: 40px;
+    color: grey;
+}
+
+.typerName img,
+.typing img {
+    margin-right: 5px;
+    margin-top: 0;
+    width: 15px;
+    height: 15px;
+}
+
+.userInfo {
+    margin-top: 8px;
+    width: 100%;
+    height: 50px;
+}
+
+.typing {
+    height: 15px;
+    font-size: 12.5px;
+    color: #656565;
+}
+
+.checkMarkBlock img,
+.checkMarkMessageBlock img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.checkMarkBlock img {
+    top: -17px;
+    left: -25px;
+}
+
+.checkMarkMessageBlock img {
+    top: 27px;
+    right: 80px;
+}
+
+.scrollBottom {
+    position: absolute;
+    bottom: 80px;
+    right: 20px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #d3d9de;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    z-index: 1000;
+}
+
+.scrollBottom:hover {
+    cursor: pointer;
+    background-color: #F7F8FA;
+}
+
+.scrollBottom img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLeft {
+    margin-left: 10px;
+    display: flex;
+    line-height: 30px;
+}
+
+.headerLeftFullName a {
+    font-weight: bold;
+    color: #222222;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.headerLeftDate {
+    margin-left: 10px;
+    color: #939393;
+    font-size: 13px;
+}
+
+.headerRight img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.dialogName {
+    width: 300px;
+    height: 40px;
+    padding: 20px 10px;
+}
+
+.dialogName input {
+    width: 300px;
+    padding-bottom: 15px;
+    border: 0;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.dialogName input::placeholder {
+    color: #99A2AD;
+    transition: color 0.3s;
+}
+
+.dialogName input:focus::placeholder {
+    color: #e1e8ed;
+}
+
+.followingList {
+    width: 320px;
+}
+
+.followingUserWrapper {
+    padding: 0 15px;
+}
+
+.followingUserWrapper:hover {
+    cursor: pointer;
+    background-color: #F0F2F5;
+}
+
+.followingUser {
+    padding: 10px 0;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.followingUserLeft {
+    display: flex;
+}
+
+.followingUserLeft .followingUserAvatar img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.followingUserLeft .followingUserFullName {
+    color: #2a5885;
+    font-weight: bold;
+    line-height: 34px;
+}
+
+.checked {
+    margin: 6px 5px 0 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #2a5885;
+}
+
+.unchecked {
+    margin: 6px 5px 0 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.bottomCreateChat {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 11px 17px 12px;
+    height: 29px;
+    border-top: 1px solid #e1e8ed;
+}
+
+.bottomCreateChat button {
+    margin-right: 14px;
+    padding: 7px 16px 8px;
+    cursor: pointer;
+    background-color: #5181b8;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+}
+
+.bottomCreateChat button:disabled {
+    opacity: .7;
+}
+
+.bottomCreateChat span {
+    color: #2a5885;
+    font-size: 13px;
+}
+
+.bottomCreateChat span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.emptyDialogs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -95px;
+    margin-top: -70px;
+    padding: 10px;
+    width: 175px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.emptyDialogs .firstText {
+    color: #929eb0;
+    line-height: 22px;
+}
+
+.emptyDialogs .secondText {
+    color: #2a5885;
+    line-height: 22px;
+}
+.emptyDialogs .secondText:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.emptyMessages {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -125px;
+    margin-top: -20px;
+    padding: 5px;
+    width: 250px;
+    color: #939393;
+}

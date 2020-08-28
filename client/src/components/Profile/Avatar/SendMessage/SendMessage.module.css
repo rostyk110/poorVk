@@ -1,0 +1,23 @@
+.messageInput textarea{
+    padding: 5px;
+    width: 440px;
+    height: 108px;
+    border: 1px solid #c5d0db;
+    border-radius: 3px;
+    resize: none;
+}
+
+.bottomWrapper {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottomWrapper button{
+    padding: 7px 16px 8px;
+    cursor: pointer;
+    background-color: #5181b8;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+}

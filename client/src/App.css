@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "sans-serif";
+    outline: none;
+}
+
+body {
+    width: 100%;
+    background-color: #f0f2f5;
+}
+
+body a {
+    text-decoration: none;
+}
+
+.App {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.App-content {
+    margin: 46px auto 0;
+    padding: 0 15px;
+    display: flex;
+    max-width: 991px;
+}
+
+
+
+/*@media only screen and (max-width: 800px)  {*/
+/*    .App {*/
+/*        width: 500px;*/
+/*        grid-template-areas:*/
+/*            "h h"*/
+/*            "n n"*/
+/*            "c c";*/
+/*        grid-template-rows: 60px 1fr;*/
+/*    }*/
+/*}*/

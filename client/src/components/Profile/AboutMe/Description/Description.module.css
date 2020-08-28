@@ -1,0 +1,44 @@
+.descBlock {
+    padding-top: 15px;
+    border-top: 1px solid #eef0f3;
+}
+
+.descBlockLabel {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.descItem {
+    display: flex;
+
+    margin-bottom: 10px;
+}
+
+.descFormItem {
+    margin-bottom: 10px;
+}
+
+.descTitle {
+    min-width: 165px;
+    color: #828282;
+}
+
+.descValue,
+.descBlock textarea,
+.descBlock input,
+.descValue a {
+    word-break: break-word;
+    line-height: 130%;
+    color: #2a5885;
+}
+
+.btn {
+    padding: 7px 16px 8px;
+    width: 100%;
+    border-radius: 4px;
+    text-align: center;
+    background: #e5ebf1;
+    color: #55677d;
+    border: transparent;
+    cursor: pointer;
+}

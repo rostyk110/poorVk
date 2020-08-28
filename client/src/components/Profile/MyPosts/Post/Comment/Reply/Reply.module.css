@@ -1,0 +1,75 @@
+.mainWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.replyWrapper {
+    width: 100%;
+    padding: 7px 0;
+    display: flex;
+    border-top: 1px solid #e7e8ec;
+}
+
+.replyAvatar,
+.replyAvatar img {
+    margin-top: 1px;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.replyFullName {
+    line-height: 1.36;
+    font-weight: 700;
+    color: #2a5885;
+}
+
+.replyTo {
+    padding-right: 15px;
+    word-break: break-word;
+    padding-top: 2px;
+    line-height: 1.36;
+    overflow: hidden;
+}
+
+.replyTo span{
+    color: rgb(42, 88, 133);
+}
+
+.replyFullName:hover,
+.replyTo span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.replyDate {
+    padding-top: 3px;
+    color: #939393;
+    line-height: 14px;
+}
+
+.deleteReply {
+    position: relative;
+}
+
+.deleteReply img {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+
+.deleteReply,
+.deleteReply img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.mainWrapper:hover > .deleteReply,
+.deleteReply img{
+    opacity: 1;
+    transition: opacity 0.3s;
+}

@@ -1,0 +1,70 @@
+.wrapper {
+    margin-top: 15px;
+    width: 795px;
+    min-height: 665px;
+    border: 4px solid #e1e8ed;
+    border-radius: 4px;
+}
+
+.welcome {
+    padding-left: 10px;
+    width: 785px;
+    height: 30px;
+    background-color: #e1e8ed;
+    font-weight: bold;
+    color: #597da3;
+}
+
+.mainWrapper {
+    padding: 20px;
+    background-color: white;
+}
+
+.aboutVk {
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.dsBlock {
+    margin-bottom: 20px;
+}
+
+.dsBlockHeader {
+    margin-bottom: 30px;
+    color: #2a5885;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.list {
+    margin: -15px 0 25px 50px;
+    list-style: none;
+
+}
+.list li{
+    color: black;
+}
+
+.list li::before{
+    position: absolute;
+    content: "\2022";
+    color: #597da3;
+    font-weight: bold;
+    font-size: medium;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.images {
+    margin: 0 auto;
+    width: 525px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.images img{
+    width: 150px;
+    height: 120px;
+}

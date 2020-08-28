@@ -1,0 +1,101 @@
+.wrapper {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #e1e8ed;
+}
+
+.header {
+    display: flex;
+    height: 54px;
+    background-color: #fafbfc;
+    border-bottom: 1px solid #ffffff
+}
+
+.headerItem {
+    margin: 4px 10px;
+    padding: 18px 8px;
+    line-height: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid #5181b8;
+}
+
+.mainWrapper {
+    padding: 20px;
+}
+
+.inputBlock {
+    margin-bottom: 20px;
+    display: flex;
+    font-size: 13px;
+}
+
+.inputBlock input {
+    font-size: 13px;
+    padding: 8px 70px 8px 12px;
+    height: 34px;
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 18px;
+    border: 1px solid #e1e8ed;
+    border-radius: 2px 0 0 2px;
+}
+
+.inputBlock input::placeholder {
+    color: #828282;
+}
+
+.inputBlock input:focus::placeholder {
+    color: #b2b2b2;
+}
+
+.inputBlock button {
+    cursor: pointer;
+    width: 60px;
+    background-color: #f0f2f5;
+    border: 1px solid #e1e8ed;
+    border-left: 0;
+    border-radius: 0 2px 2px 0;
+}
+
+.playList {
+    display: flex;
+}
+
+.playListLeft {
+    width: 514px;
+    padding-right: 20px;
+    border-right: 1px solid #e1e8ed;
+}
+
+.playListHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shuffleAll {
+    position: relative;
+    padding: 4px 4px 4px 54px;
+    height: 32px;
+    font-size: 13px;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.shuffleSvg {
+    top: 10px;
+    left: 13px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.shuffleAll:hover {
+   background-color: #F0F2F5;
+}
+
+.chooseShuffle:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+

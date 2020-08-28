@@ -1,0 +1,237 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 42px;
+    z-index: 1000;
+    background-color: #4a76a8;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+}
+
+.logo {
+    width: 45px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: 0 6px;
+    cursor: pointer;
+}
+
+.leftHeaderBlock {
+    display: flex;
+}
+
+.search {
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-left: 132px;
+    padding-left: 28px;
+    width: 230px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-position: 8px 7px;
+    background-color: #224b7a;
+    border: transparent;
+    border-radius: 14px;
+}
+
+.search,
+.search::placeholder {
+    color: #8baac5;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.search:focus {
+    background-color: #fff;
+    color: #000;
+}
+
+.loginBlockWrapper {
+    position: relative;
+    min-width: 80px;
+    padding: 8px 25px 9px 10px;
+    height: 25px;
+}
+
+.player {
+    margin-left: 20px;
+    min-width: 310px;
+    display: flex;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+}
+
+.playBtn,
+.previousBtn,
+.nextBtn {
+    width: 24px;
+    height: 24px;
+    opacity: 0.65;
+}
+
+.playBtn:hover,
+.previousBtn:hover,
+.nextBtn:hover {
+    opacity: 1;
+}
+
+.playBtn {
+    margin-top: 11px;
+}
+
+.previousBtn,
+.nextBtn {
+    margin-top: 10px;
+}
+
+.previousBtn img,
+.nextBtn img {
+    height: 15px;
+    width: 15px;
+}
+
+.playBtn img {
+    height: 18px;
+    width: 18px;
+}
+
+.trackName {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #bfcfe0;
+    line-height: 40px;
+}
+
+.loginBlock {
+    display: flex;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.loginBlock:hover {
+    cursor: pointer;
+}
+
+.loginBlockWrapper:hover {
+    background-color: #2a5885;
+}
+
+.loginBlock img {
+    margin-left: 10px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.addMenu {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.menuList {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    min-width: 166px;
+    max-width: 200px;
+    background-color: white;
+    border: 1px solid lightgray;
+    visibility: hidden;
+    transition: visibility 0s 0.3s;
+    z-index: 1000;
+}
+
+.loginBlock:hover > .menuList {
+    visibility: visible;
+    transition: visibility 0.3s;
+    cursor: pointer;
+}
+
+.menuList:hover {
+    visibility: visible;
+}
+
+.menuList .logout:hover {
+    text-decoration: underline;
+}
+
+
+.logout {
+    padding: 10px;
+    color: #42648b;
+    cursor: pointer;
+}
+
+.logout:hover {
+    background-color: #e5ebf1;
+}
+
+.burger {
+    display: none;
+}
+
+
+/*@media (max-width: 992px)  {*/
+/*    .container {*/
+/*        max-width: 750px;*/
+/*    }*/
+/*.burger {*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.burger:hover {*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.burger div {*/
+/*    position: absolute;*/
+/*    right: 10px;*/
+/*    font-size: 2rem;*/
+/*    height: 4px;*/
+/*}*/
+
+/*.burger div:first-child {*/
+/*    top: -10px;*/
+/*}*/
+
+/*.burger div:nth-child(2) {*/
+/*    top:-6px;*/
+/*}*/
+
+/*.burger div:nth-child(3) {*/
+/*    top: -2px;*/
+/*}*/
+/*}*/
+
+/*@media (max-width: 767px)  {*/
+/*    .container {*/
+/*        max-width: none;*/
+/*    }*/
+/*}*/
+
+@media (max-width: 420px) {
+    .search {
+        display: none;
+    }
+}

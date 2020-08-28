@@ -1,0 +1,43 @@
+.loginForm {
+    margin: 15px 34px 0 0;
+    width: 150px;
+
+}
+.loginForm input{
+    padding: 5px 9px 7px;
+    width: 130px;
+    border: 1px solid #d3d9de;
+    border-radius: 3px;
+}
+
+.error {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 300px;
+    color: red;
+    border: 1px solid red;
+}
+
+.buttonsBlock {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    width: 150px;
+    height: 30px;
+    padding: 7px 16px 8px;
+    line-height: 15px;
+    background-color: #5181b8;
+    border-radius: 4px;
+    border: 0;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+

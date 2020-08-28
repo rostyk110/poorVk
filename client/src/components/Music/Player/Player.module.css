@@ -1,0 +1,172 @@
+.playerWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 753px;
+    height: 38px;
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid #e1e8ed;
+}
+
+.btn,
+.btn img {
+    width: 28px;
+    height: 28px;
+}
+
+.leftSide,
+.middleSide,
+.volumeSide,
+.rightSide {
+    display: flex;
+}
+
+.leftSide {
+    margin-top: 5px;
+}
+
+.leftSide .leftSidePrevNext .btn,
+.leftSide .leftSidePrevNext .btn img {
+    width: 11px;
+    height: 11px;
+}
+
+.leftSidePrevNext {
+    margin-top: 2px;
+    width: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftSidePrevNext div {
+    opacity: 0.7;
+}
+
+.leftSidePrevNext div:hover {
+    opacity: 1;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.artist {
+    margin-top: 3px;
+    color: #939393;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.artist:hover {
+    cursor: pointer;
+   text-decoration: underline;
+}
+
+.musicImage,
+.musicImage img {
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+}
+
+.mainPlayer {
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+.musicInfo div {
+    margin-bottom: 2px;
+    line-height: 10px;
+}
+
+.seekMusicSliderWrapper {
+    line-height: 15px;
+}
+
+.musicInfoNameTime {
+    display: flex;
+    justify-content: space-between;
+}
+
+.musicInfoTime {
+    cursor: pointer;
+    color: #939393;
+}
+
+.volumeSide {
+    width: 90px;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.volumeBtns {
+    margin-right: 10px;
+    display: flex;
+}
+
+.volumeBtns div{
+    opacity: 0.8;
+}
+
+.volumeBtns div:hover{
+    opacity: 1;
+}
+.volumeBtns div:active{
+
+}
+
+.volumeBtns div:first-child {
+    margin-right: 7px;
+}
+
+
+.btn.play {
+    margin-right: 9px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.rightSide {
+    margin-top: 5px;
+}
+
+.shuffle {
+    margin-right: 7px;
+}
+
+input[type=range] {
+    padding: 3px 0;
+    width: 367px;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: #3071a9;
+    border-radius: 2px;
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    opacity: 1;
+    margin-top: -3px;
+    width: 8px;
+    height: 8px;
+    background: #5181b8;
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+input[type=range]:hover > input[type=range]::-webkit-slider-thumb {
+    opacity: 1;
+    transition: opacity 0.3s;
+}

@@ -1,0 +1,44 @@
+.aboutMe {
+    min-height: 230px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 513px;
+    border-radius: 4px;
+    border: 1px solid #e1e8ed;
+    background-color: #ffffff;
+}
+
+.description {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.userName {
+    color: #000000;
+    font-size: 19px;
+}
+
+.topUserInfo {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.userIsOnline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.status {
+    margin-top: 4px;
+    color: #939699;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.status:hover {
+    cursor: pointer;
+}

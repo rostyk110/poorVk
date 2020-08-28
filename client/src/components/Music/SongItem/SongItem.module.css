@@ -1,0 +1,44 @@
+.songWrapper {
+    padding: 2px 15px 2px 4px;
+    margin-top: 10px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.songWrapper:hover {
+    cursor: pointer;
+    background-color: #F0F2F5;
+}
+
+.leftSide {
+    display: flex;
+}
+
+.imageBlock,
+.imageBlock img {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.title {
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+.artist {
+    color: #939393;
+    line-height: 1.25;
+}
+
+.artist:hover {
+    text-decoration: underline;
+}
+
+.rightSide {
+    line-height: 44px;
+    color: #939393;
+}

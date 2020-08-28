@@ -1,0 +1,139 @@
+.active {
+    background-color: #F0F2F5;
+    transition: background-color 0.3s;
+}
+
+.comment {
+    padding: 10px 20px 5px 20px;
+    display: flex;
+    transition: background-color 0.3s;
+}
+
+.comment:not(:first-child) {
+    border-top: 1px solid #e1e8ed;
+}
+
+.commentMain {
+    width: 100%;
+    line-height: 16px;
+}
+
+.replyBlock {
+    display: flex;
+}
+
+.reply {
+    margin-left: 10px;
+    color: #2a5885;
+    font-size: 12.5px;
+    line-height: 20px;
+}
+.reply:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.avatar,
+.avatar img{
+    height: 34px;
+    width: 34px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.avatar:hover {
+    cursor: pointer;
+}
+
+.userName {
+    color: #2a5885;
+    font-weight: bold;
+}
+
+.userName:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.commentText {
+    padding-right: 20px;
+    word-break: break-word;
+    line-height: 1.7;
+}
+
+.commentDate {
+    color: #939393;
+    line-height: 20px;
+}
+
+.comment:hover > .deleteComment {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.deleteComment {
+    position: relative;
+    opacity: 0;
+}
+
+.deleteComment img{
+    position: absolute;
+    right: -10px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.deleteComment img:hover{
+    cursor: pointer;
+}
+
+.replyList {
+    padding-left: 64px;
+}
+
+.replyWrapper {
+    position: relative;
+    margin-top: 10px;
+    padding-left: 65px;
+    display: flex;
+}
+
+.replyForm {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.replyAvatar,
+.replyAvatar img{
+    margin-top: 1.5px;
+    margin-right: 10px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+.replyForm input {
+    width: 365px;
+    height: 14px;
+    padding: 7px 15px 7px 13px;
+    border: 1px solid #e7e8ec;
+    border-radius: 4px;
+}
+
+.replyBtn {
+    position: absolute;
+    right: 20px;
+    top: 6px;
+}
+
+.replyBtn:hover {
+    cursor: pointer;
+}
+
+.replyBtn img{
+    width: 20px;
+    height: 20px;
+}
+

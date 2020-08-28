@@ -1,0 +1,13 @@
+.profile {
+    display: flex;
+    margin-top: 15px;
+}
+
+.leftSide {
+    width: 230px;
+    margin-right: 15px;
+}
+
+.rightSide {
+    width: 550px;
+}
